@@ -1,0 +1,22 @@
+Git Basic Guide
+
+Basic commonds
+git init 		- for initializing the git on local dir.
+git status 		- for checking status
+git add filename [Eg. git add abcd.txt] 	= for adding the files
+git commit -m "message" [Eg. git commit -m "Initial commit"] = commit the changes
+git remote add origin repo url [Eg. git remote add origin git@github.com:pawar-mahesh/asdfgh......] = set the origin
+git push -u origin master 	- for pushing the changes on github
+
+…or create a new repository on the command line
+echo "# Dairy-Management" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:pawar-mahesh/Dairy-Management.git (Projrct repo set)
+git push -u origin master
+
+
+…or push an existing repository from the command line
+git remote add origin git@github.com:pawar-mahesh/Dairy-Management.git
+git push -u origin master
