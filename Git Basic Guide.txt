@@ -21,6 +21,37 @@ git push -u origin master
 git remote add origin git@github.com:pawar-mahesh/Dairy-Management.git
 git push -u origin master
 -------------------------------------------------------------------------------------------------------------------------
+========================================================================================================================
+## Git : Generating a new SSH key and adding it to the ssh-agent
+{https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent}
+Steps:
+  Open Terminal.
+  Paste the text below, substituting in your GitHub email address.
+#$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+$ ssh-keygen -t rsa -b 4096 -C "pawar.mahesh2345@gmail.com"
+
+# Enter a file in which to save the key (/home/you/.ssh/id_rsa): [Press enter] ====>> PRESS Enter
+# Now enter the password two times
+
+# Adding your SSH key to the ssh-agent
+
+$ eval "$(ssh-agent -s)"
+
+#> Agent pid 59566
+
+$ ssh-add ~/.ssh/id_rsa
+
+$ sudo apt-get install xclip
+# Downloads and installs xclip. If you don't have `apt-get`, you might need to use another installer (like `yum`)
+
+$ xclip -sel clip < ~/.ssh/id_rsa.pub
+# Copies the contents of the id_rsa.pub file to your clipboard
+
+
+Now go to "www.github.com" => Settings => SSH and GPG keys => New SSH key or Add SSH key => Paste
+Add SSH Key and password
+Done
 =========================================================================================================================
 ## Git Error :
 ssh: connect to host github.com port 22: Connection timed out
