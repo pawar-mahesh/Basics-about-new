@@ -1,6 +1,7 @@
-Git Basic Guide
+## Git Basic Guide
+=======================================================================================================================
 
-Basic commonds
+## Basic commonds
 git init 		- for initializing the git on local dir.
 git status 		- for checking status
 git add filename [Eg. git add abcd.txt] 	= for adding the files
@@ -16,7 +17,35 @@ git commit -m "first commit"
 git remote add origin git@github.com:pawar-mahesh/Dairy-Management.git (Projrct repo set)
 git push -u origin master
 
-
 …or push an existing repository from the command line
 git remote add origin git@github.com:pawar-mahesh/Dairy-Management.git
 git push -u origin master
+-------------------------------------------------------------------------------------------------------------------------
+=========================================================================================================================
+## Git Error :
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+Please make sure you have the correct access rights
+and the repository exists.
+
+Solution:
+
+#{Authentication - If you get a question, answer "yes".}
+cmd = $ ssh -T -p 443 git@ssh.github.com
+#Hi pawar-mahesh! You've successfully authenticated, but GitHub does not provide shell access.
+
+#Override SSH settings
+$ sudo nano ~/.ssh/config
+
+*   # Add section below to it
+*     Host github.com
+*       Hostname ssh.github.com
+*       Port 443
+
+#Verify
+$ ssh -T git@github.com
+#Hi pawar-mahesh! You've successfully authenticated, but GitHub does not provide shell access.
+
+{http://www.inanzzz.com/index.php/post/wa1f/solution-for-ssh-connect-to-host-github-com-port-22-connection-timed-out-error}
+Done
+===========================================================================================================================
