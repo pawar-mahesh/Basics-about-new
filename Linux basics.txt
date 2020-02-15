@@ -1,0 +1,10 @@
+## This guide is about the basics things in Ubuntu
+====================================================
+
+## Set python as default for python3
+Open terminal
+cmd = "nano ~/.bashrc"
+Type "alias python=python3" on new line at the top of the file
+save the file and close
+cmd = "source ~/.bashrc"
+Done
