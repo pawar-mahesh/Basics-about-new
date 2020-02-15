@@ -8,3 +8,14 @@ Type "alias python=python3" on new line at the top of the file
 save the file and close
 cmd = "source ~/.bashrc"
 Done
+--------------------------------------------------------------
+
+## Pycharm Error After installation and for running first program
+Error = ModuleNotFoundError: No module named 'distutils.core'
+open terminal
+Install the packages two packages below:
+sudo apt-get install python3-distutils
+sudo apt install python3-pip / sudo apt install python-pip
+For python3 & python2 respectively.
+Done
+-----------------------------------------------------------
