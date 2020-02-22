@@ -113,7 +113,14 @@ $ export USE_CCACHE=1
 $ export CCACHE_EXEC=$(command -v ccache)
 
 After this, load up the compilation commands:
+# Set up environment
 $ . build/envsetup.sh
+
+# Choose a target [ONLY FOR PE 10]
+$ lunch aosp_tulip-userdebug
+
+# Build the code [ONLY FOR PE 10]
+$ mka bacon -j$(nproc --all)
 
 Then, tell it which device you want to make and let it roll:
 $ breakfast <device> OR lunch
