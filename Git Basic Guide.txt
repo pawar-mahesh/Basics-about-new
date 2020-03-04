@@ -82,3 +82,29 @@ $ ssh -T git@github.com
 {http://www.inanzzz.com/index.php/post/wa1f/solution-for-ssh-connect-to-host-github-com-port-22-connection-timed-out-error}
 Done
 ===========================================================================================================================
+## Git commonds
+---------------
+# delete the command and dont save their history
+
+$ git reset --hard ($GIT_COMMIT_HASH_HERE)
+$ git push origin (HEAD) --force
+
+
+# check the branches name & current branches
+$ git branch
+
+# set head to perticular branch
+$ git checkout <branch_name>
+
+# cherry-pick the git commits
+## add others repository
+$ git remote add other https://example.link/repository.git
+$ git fetch other
+
+$ git cherry-pick <commit SHA-1>
+
+# see the changed file by opening them
+
+# Authentication
+$ git commit --amend --author="MMK pawar-mahesh <pawar.mahesh2345@gmail.com>"
+--------------------------------------------------------------------------------------
