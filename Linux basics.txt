@@ -19,3 +19,23 @@ sudo apt install python3-pip / sudo apt install python-pip
 For python3 & python2 respectively.
 Done
 -----------------------------------------------------------
+
+
+## Finding the cores of cpu
+===========================
+# count no of CPUs
+
+$ cat /proc/cpuinfo | grep processor | wc -l
+
+# Output :
+# 2
+
+# To check the number of cores !
+
+$ cat /proc/cpuinfo | grep 'core id'
+
+$ nproc
+
+# 2
+
+--------------------------------------------------------------
