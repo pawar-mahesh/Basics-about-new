@@ -15,6 +15,15 @@ g++-multilib gcc-multilib git-core gnupg gperf imagemagick lib32ncurses5-dev \
 lib32z-dev libc6-dev-i386 libgl1-mesa-dev libssl-dev libx11-dev \
 libxml2-utils unzip x11proto-core-dev xsltproc zip zlib1g-dev
 
+
+# Python version 3
+# Repo is built on particular functionality from Python 2.x and is incompatible with Python 3.
+# To use Repo, install Python 2.x:
+#### Solution for : [/usr/bin/env: ‘python’: No such file or directory ]
+## only execute when above error occurs
+
+$ sudo apt-get install python
+
 ######################################
 #  Step Two: Configure Repo and Git  #
 ######################################
