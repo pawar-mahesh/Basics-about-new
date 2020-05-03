@@ -142,7 +142,28 @@ Others may not use mka, use make -j$( nproc --all )
 Whenever you build again, make sure you run a clean build every time by placing
 this command in between the other two:
 $ make clobber
+--------------------------------------------------------------------------------
+#################
+#     Upload    #
+#################
 
+## sourceforge
+sftp mahipawar@frs.sourceforge.net
+
+cd /home/frs/project/<Project_Name>
+
+# colt Os
+cd /home/frs/project/ColtOS
+
+# Havoc gapps lover 
+cd /home/frs/project/mahi-builds/Tulip\ Havoc\ Gapps\ Lover\ Edition/
+
+
+Then find the directory of output and tyoe
+
+put <Output directory with file name>
+
+-------------------------------------------------------------------------------
 #################
 #  Jack issues  #
 #################
