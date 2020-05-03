@@ -3,11 +3,25 @@
 
 ## Set python as default for python3
 Open terminal
-cmd = "nano ~/.bashrc"
-Type "alias python=python3" on new line at the top of the file
-save the file and close
-cmd = "source ~/.bashrc"
-Done
+
+$ nano ~/.bashrc"
+
+# Type "alias python=python3" on new line at the top of the file
+# save the file and close
+
+$ source ~/.bashrc
+
+# Done
+
+## Set pip3 as default
+
+$ nano ~/.bashrc
+# Type "alias python=python3" on new line at the top of the file
+# save the file and close
+
+$ source ~/.bashrc
+
+# Done
 --------------------------------------------------------------
 
 ## Pycharm Error After installation and for running first program
