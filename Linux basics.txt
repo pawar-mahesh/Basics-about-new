@@ -78,4 +78,13 @@ $ sudo ./xampp*
 # ref : "https://vitux.com/how-to-install-xampp-on-your-ubuntu-18-04-lts-system/"
 
 ## XAMPP installed path = "/opt/lampp"
+
+# Launch XAMPP through the Terminal
+$ sudo /opt/lampp/lampp start
+
+# Verify Installation
+-- Put this url in browser: "http://localhost"
+
+# In order to install Net Tools, run the following command as root:
+$ sudo apt install net-tools
 --------------------------------------------------------------------------------
