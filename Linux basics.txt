@@ -53,3 +53,27 @@ $ nproc
 # 2
 
 --------------------------------------------------------------
+==============================================================
+## XAMPP installation
+
+# Download - https://www.apachefriends.org/index.html
+
+# Make the installation package executable
+# $ chmod 755 [package name]
+
+$ chmod 755 xampp*
+
+# Confirm execute permission // "$ ls -l" ----- for permission check 
+$ ls -l xampp*
+
+# The -rwxr output shows that the file can be executed by the user 
+# whose name is also mentioned in the output.
+
+# Launch the Setup Wizard
+# $ sudo ./[package name]
+
+$ sudo ./xampp*
+
+# It will start the process ..
+# ref : "https://vitux.com/how-to-install-xampp-on-your-ubuntu-18-04-lts-system/"
+--------------------------------------------------------------------------------
