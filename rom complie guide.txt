@@ -52,8 +52,6 @@ $ cd ~/<foldername>
 # Clone the Source of building rom
 # This is in the Source manifest file named as 'manifest' or 'android manifest'
 # repo init -u "CLONE_URL" -b "BRANCH"
-# For example lets clone PE Source for Android 10.
-# So the Branch will be ten for Android 10 it will be ten.
 
 ## Repo Initalization for Havoc and faster sync [Android 10]
 # Havoc repo initialize [Android 10]
@@ -62,6 +60,8 @@ repo init --depth=1 -u https://github.com/Havoc-OS/android_manifest.git -b ten
 # Havoc repo sync [Android 10]
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ----------------------------------------------------------------------------
+# For example lets clone PE Source for Android 10.
+# So the Branch will be ten for Android 10 it will be ten.
 
 $ repo init -u https://github.com/PixelExperience/manifest -b ten
 /* This is mainly present in manifest copy from there for no errors */
