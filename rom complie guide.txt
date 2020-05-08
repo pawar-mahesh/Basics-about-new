@@ -55,10 +55,10 @@ $ cd ~/<foldername>
 
 ## Repo Initalization for Havoc and faster sync [Android 10]
 # Havoc repo initialize [Android 10]
-repo init --depth=1 -u https://github.com/Havoc-OS/android_manifest.git -b ten
+$ repo init --depth=1 -u https://github.com/Havoc-OS/android_manifest.git -b ten
 
 # Havoc repo sync [Android 10]
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+$ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ----------------------------------------------------------------------------
 # For example lets clone PE Source for Android 10.
 # So the Branch will be ten for Android 10 it will be ten.
@@ -67,22 +67,22 @@ $ repo init -u https://github.com/PixelExperience/manifest -b ten
 /* This is mainly present in manifest copy from there for no errors */
 
 # Sync for sync the project
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+$ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 --------------------------------------------------------------------------------
 ## clone Repository
 
 # device tree
-git clone git@github.com:pawar-mahesh/android_device_xiaomi_tulip.git -b ten device/xiaomi/tulip
+$ git clone git@github.com:pawar-mahesh/android_device_xiaomi_tulip.git -b ten device/xiaomi/tulip
 
 # sdm-660-common-device-tree
-git clone git@github.com:pawar-mahesh/android_device_xiaomi_sdm660-common.git -b ten device/xiaomi/sdm660-common
+$ git clone git@github.com:pawar-mahesh/android_device_xiaomi_sdm660-common.git -b ten device/xiaomi/sdm660-common
 
 # kernel
-git clone git@github.com:pawar-mahesh/android_kernel_xiaomi_sdm660.git -b ten kernel/xiaomi/sdm660
+$ git clone git@github.com:pawar-mahesh/android_kernel_xiaomi_sdm660.git -b ten kernel/xiaomi/sdm660
 
 # vendor
-git clone git@github.com:pawar-mahesh/proprietary_vendor_xiaomi.git -b ten vendor/xiaomi
+$ git clone git@github.com:pawar-mahesh/proprietary_vendor_xiaomi.git -b ten vendor/xiaomi
 --------------------------------------------------------------------------------
 
 ## Go to following dir
@@ -156,20 +156,19 @@ $ make clobber
 #################
 
 ## sourceforge
-sftp mahipawar@frs.sourceforge.net
+$ sftp mahipawar@frs.sourceforge.net
 
-cd /home/frs/project/<Project_Name>
+# $ cd /home/frs/project/<Project_Name>
 
 # colt Os
-cd /home/frs/project/ColtOS
+$ cd /home/frs/project/ColtOS
 
 # Havoc gapps lover 
-cd /home/frs/project/mahi-builds/Tulip\ Havoc\ Gapps\ Lover\ Edition/
+$ cd /home/frs/project/mahi-builds/Tulip\ Havoc\ Gapps\ Lover\ Edition/
 
+# Then find the directory of output and tyoe
 
-Then find the directory of output and tyoe
-
-put <Output directory with file name>
+$ put <Output directory with file name>
 
 -------------------------------------------------------------------------------
 #################
