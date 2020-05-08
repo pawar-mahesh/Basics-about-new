@@ -55,6 +55,14 @@ $ cd ~/<foldername>
 # For example lets clone PE Source for Android 10.
 # So the Branch will be ten for Android 10 it will be ten.
 
+## Repo Initalization for Havoc and faster sync [Android 10]
+# Havoc repo initialize [Android 10]
+repo init --depth=1 -u https://github.com/Havoc-OS/android_manifest.git -b ten
+
+# Havoc repo sync [Android 10]
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+----------------------------------------------------------------------------
+
 $ repo init -u https://github.com/PixelExperience/manifest -b ten
 /* This is mainly present in manifest copy from there for no errors */
 
