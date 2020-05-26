@@ -118,11 +118,13 @@ Open your bashrc or equivalent:
 $ nano ~/.bashrc
 
 ## Change the cache directory:
-# $ export CCACHE_DIR="Your Path to CCACHE dir"
-$ export CCACHE_DIR=/ramdisk/ccache
+# export CCACHE_DIR="Your Path to CCACHE dir"
+# Append to the end of this file# 
 
-- #Append#       " export USE_CCACHE=1 "      to the end of this file
-   then hit ctrl-X, Y, and enter.
+"export CCACHE_DIR=/media/mahi/nospace/.ccache"
+"export USE_CCACHE=1"
+
+# then hit ctrl-X, Y, and enter.
 $ source ~/.bashrc
 
 After that, run this command if you used the manual method of setup above
