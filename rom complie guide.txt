@@ -116,6 +116,11 @@ $ cd ../../../        ## OR ##     cd ~ && cd <source_sync_dir_name>
 
 Open your bashrc or equivalent:
 $ nano ~/.bashrc
+
+## Change the cache directory:
+# $ export CCACHE_DIR="Your Path to CCACHE dir"
+$ export CCACHE_DIR=/ramdisk/ccache
+
 - #Append#       " export USE_CCACHE=1 "      to the end of this file
    then hit ctrl-X, Y, and enter.
 $ source ~/.bashrc
