@@ -16,7 +16,7 @@ $ source ~/.bashrc
 ## Set pip3 as default
 
 $ nano ~/.bashrc
-# Type "alias python=python3" on new line at the top of the file
+# Type "alias pip=pip3" on new line at the top of the file
 # save the file and close
 
 $ source ~/.bashrc
