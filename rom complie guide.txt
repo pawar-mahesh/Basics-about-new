@@ -83,6 +83,12 @@ $ git clone https://github.com/pawar-mahesh/kernel_xiaomi_sdm660.git -b ten kern
 
 # vendor
 $ git clone https://github.com/pawar-mahesh/vendor_xiaomi.git -b ten vendor/xiaomi
+
+# dirac
+$ git clone https://github.com/pawar-mahesh/vendor_dirac.git -b ten vendor/dirac
+
+# miui camera
+$ git clone https://github.com/pawar-mahesh/vendor_MiuiCamera.git -b ten vendor/MiuiCamera
 --------------------------------------------------------------------------------
 
 ## Go to following dir
