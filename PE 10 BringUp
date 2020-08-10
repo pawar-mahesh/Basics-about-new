@@ -1,0 +1,43 @@
+$ sudo apt-get install git-core
+
+$ git config --global user.name "pawar-mahesh"
+$ git config --global user.email "pawar.mahesh2345@gmail.com"
+
+$ git clone https://github.com/akhilnarang/scripts
+$ cd scripts
+$ bash setup/android_build_env.sh
+
+=============================================================
+
+$ mkdir pe
+$ cd pe
+
+$ repo init -u https://github.com/PixelExperience/manifest -b ten
+
+$ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
+$ git clone https://github.com/pawar-mahesh/android_device_xiaomi_twolip.git -b ten device/xiaomi/twolip
+
+$ git clone https://github.com/LineageOS/android_device_xiaomi_sdm660-common.git -b lineage-17.1 device/xiaomi/sdm660-common
+
+$ git clone https://gitlab.com/the-muppets/proprietary_vendor_xiaomi.git -b lineage-17.1 vendor/xiaomi
+
+$ git clone https://github.com/xiaomi-sdm660/android_kernel_xiaomi_sdm660.git -b master kernel/xiaomi/sdm660
+
+=============================================================
+
+$ . build/envsetup.sh
+
+$ lunch aosp_twolip-userdebug
+
+$ mka bacon -j$(nproc --all)
+
+=============================================================
+
+sftp mahipawar@frs.sourceforge.net
+
+cd /home/frs/project/mahi-builds/PE/
+
+put
+
+=============================================================
