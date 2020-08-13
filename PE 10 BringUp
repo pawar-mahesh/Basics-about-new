@@ -9,8 +9,8 @@ $ bash setup/android_build_env.sh
 
 =============================================================
 
-$ mkdir pe
-$ cd pe
+$ mkdir ~/pe
+$ cd ~/pe
 
 $ repo init -u https://github.com/PixelExperience/manifest -b ten
 
