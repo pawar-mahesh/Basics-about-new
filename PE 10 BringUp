@@ -16,11 +16,11 @@ $ repo init -u https://github.com/PixelExperience/manifest -b ten-plus
 
 $ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
-$ git clone https://github.com/pawar-mahesh/android_device_xiaomi_twolip.git -b ten device/xiaomi/twolip
+$ git clone https://github.com/pawar-mahesh/device_xiaomi_tulip.git -b ten device/xiaomi/tulip
 
-$ git clone https://github.com/LineageOS/android_device_xiaomi_sdm660-common.git -b lineage-17.1 device/xiaomi/sdm660-common
+$ git clone https://github.com/pawar-mahesh/device_xiaomi_sdm660-common.git -b ten device/xiaomi/sdm660-common
 
-$ git clone https://gitlab.com/the-muppets/proprietary_vendor_xiaomi.git -b lineage-17.1 vendor/xiaomi
+$ git clone https://github.com/pawar-mahesh/vendor_xiaomi.git -b ten vendor/xiaomi
 
 $ git clone https://github.com/xiaomi-sdm660/android_kernel_xiaomi_sdm660.git -b master kernel/xiaomi/sdm660
 
@@ -28,7 +28,7 @@ $ git clone https://github.com/xiaomi-sdm660/android_kernel_xiaomi_sdm660.git -b
 
 $ . build/envsetup.sh
 
-$ lunch aosp_twolip-userdebug
+$ lunch aosp_tulip-userdebug
 
 $ mka bacon -j$(nproc --all)
 
